@@ -10,7 +10,7 @@ import net.rakheros.horseequipment.HorseEquipment;
 
 public class ModItems {
     public static Item NETHERITE_HORSE_ARMOR = registerItem("netherite_horse_armor",
-            new AnimalArmorItem(ArmorMaterials.NETHERITE, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1)));
+            new AnimalArmorItem(ArmorMaterials.NETHERITE, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1).fireproof()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(HorseEquipment.MOD_ID, name), item);
